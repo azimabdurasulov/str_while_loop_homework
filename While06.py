@@ -7,3 +7,15 @@ def main(s):
     Returns:
         int: return answer
     """
+    i = 0
+    counter = 0
+    s = s.lower()
+    
+    while i < len(s):
+        if s[i].islower() and s.count(s[i]) == 1:
+            counter += 1
+        
+        i += 1
+    return counter
+
+print(main("CodeschoolUz"))
