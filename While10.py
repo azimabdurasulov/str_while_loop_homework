@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i = 0 
+    counter = 0
+    while i < len(s):
+        if int(s[i]) % 2 == 1:
+             counter += int(s[i])
+        i += 1
+    return counter
+
+print(main("245554454"))
