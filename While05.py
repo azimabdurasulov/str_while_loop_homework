@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i = 0
+    counter = 0
+    while i < len(s):
+        if s[i].islower():
+            counter += 1
+        i += 1
+    return counter
+
+print(main('python.UZ'))
